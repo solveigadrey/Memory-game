@@ -40,9 +40,6 @@ var count = 0; // initializing the couter, to just select 2 cards to be shown
 var previousTarget = null; // to don't be able to click on an item twice and recieve a match
 var delay = 1000; // delay for the cards to be hide again
 
-//trying to put a win alert at the end of the game
-//var counter;
-//var number;
 
 var game = document.getElementById('game'); //getting the element of the div game
 var grid = document.createElement('section'); // creation of a section with class of grid
@@ -114,15 +111,6 @@ grid.addEventListener('click', function(event) { // a function for an event. Eac
       setTimeout(resetGuesses, delay); // here we reset the guesses
     }
 
-// trying to put an alert at the end of the game
-    // setTimeout (function () {
-    //   counter = counter +2;
-    //   if (counter === number) {
-    //     alert("win");
-    //   }
-    // }, 1200);
-    //
-    // }
 
     previousTarget = clicked; //to dont have a match by clicking twice on the same card
   }
